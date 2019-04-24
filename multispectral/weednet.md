@@ -19,7 +19,10 @@ Segnet作为分割网络，输入为近红外，红，NDVI多光谱图像作为�
 
 ## Experiment result
 ### Datasets
-- 可获取，手工标注和自动标注相结合，详细介绍见数据集介绍
+- 可获取，手工标注和自动标注相结合。介绍如下：  
+预先设计一块试验田，根据施药的分为三份，量大的都是甜菜，量中等是甜菜和杂草混合，量少的是杂草。如下图所示：  
+![GitHub](https://github.com/ZhipengLiu6/image_cloud/raw/master/paper/multispectural/weednet/data_info.png "GitHub,Social Coding")    
+根据NDVI(归一化植被指数)，可以自动区分植物和土壤。故对于只含有甜菜和杂草的土地可以自动提取标记出甜菜和杂草作为训练数据，测试集合由于混油杂草和甜菜，只能让植物专家手工标注，每张图片耗时60分钟。
 ### Code
 - 可获取  
 分割可视化结果如下图所示，植物和杂草混合区域分割结果不太理想。  
