@@ -32,5 +32,13 @@ Segnet作为分割网络，输入为近红外，红，NDVI多光谱图像作为�
 1. 训练数据太少，造成泛化能力不足
 2. 训练数据中杂草和植物没有相互混合出现在同一图片中，没有学习到植物和杂草的差异，而测试时杂草和植物相互混合的。
 
+## 小结
+杂草检测的总体流程：
+1. 获取数据：试验田控制变量，得到有杂草和植物的干净数据。（耗时耗力）
+2. 训练分割网络
+3. 得到杂草和植物的分类结果。
+
+不足之处：
+1. 数据的多样性少，造成模型泛化能力不足
 ## Reference
 1. Sa I, Chen Z, Popović M, et al. weednet: Dense semantic weed classification using multispectral images and mav for smart farming[J]. IEEE Robotics and Automation Letters, 2018, 3(1): 588-595.
